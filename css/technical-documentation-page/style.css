@@ -1,0 +1,144 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  color: #4d4e53;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+    text-align: justify;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar header {
+  display: block;
+  color: #000;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#navbar ul {
+  display: block;
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  display: block;
+  list-style: none;
+  border-top: 1px solid;
+  width: 100%;
+  padding: 4px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  color: #000;
+  font-size: 1.8em;
+}
+section {
+  display: block;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+}
+
+
+@media only screen and (max-width: 815px) {
+    #navbar {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1; 
+    }
+
+    #navbar li {
+        padding: 0;
+    }
+    
+    #main-doc {
+        
+        position: relative;
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+}
