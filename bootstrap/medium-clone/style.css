@@ -1,0 +1,36 @@
+h2 {
+  font-family: Times New Roman, Times, serif;
+  color: rgba(8, 8, 8, 1);
+  line-height: 74px;
+  font-size: 70px;
+}
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(8, 8, 8, 1);
+}
+.bg-blue {
+  background-color: #c4e2ff;
+}
+.bg-green {
+  background-color: rgb(26, 137, 23);
+}
+
+.text-green {
+  color: rgb(26, 137, 23);
+}
+.border-n {
+  border: none;
+}
+.border-b {
+  border-bottom: 1px solid rgba(41, 41, 41, 1);
+}
+
+.border-t {
+  border-top: 1px solid rgba(230, 230, 230, 1);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
