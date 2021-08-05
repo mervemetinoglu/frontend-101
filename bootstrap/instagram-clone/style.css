@@ -1,48 +1,24 @@
 body {
-   padding: 5rem;
+  padding: 5rem;
 }
 
 a {
-    text-decoration:none;
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
+/* Navbar */
 nav {
-    height: 54px;
-    background-color: #fff;
+  height: 54px;
+  background-color: #fff;
 }
+
 .logo {
-    margin-left: 192px;
+  margin-left: 192px;
 }
-
-
-.user-photo {
-    width: 35px; 
-    height: 35px; 
-    object-fit: cover;
-}
-
-.suggested-user-photo {
-    width: 30px; 
-    height: 30px; 
-    border-radius: 50%;
-}
-::placeholder {
-  text-align: center;
-  font-size: 14px;
-  background: url("assets/search-solid.svg");
-  background-repeat: no-repeat;
-  background-size: 6%;
-  background-position: 37%;
-}
-
-.middlearea{
-    max-height: 200px !important; 
-}
-
 
 input.empty {
   font-family: FontAwesome;
@@ -50,15 +26,19 @@ input.empty {
   font-weight: normal;
   text-decoration: inherit;
   background-color: #fafafa;
-  
 }
 
-.postuserfont {
+/* middle area */
+
+.middlearea {
+  max-height: 200px !important;
+}
+
+.storytext {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  color: #262626bb;
-
+  font-size: 12px;
+  color: black;
 }
 
 .storyphoto {
@@ -70,16 +50,64 @@ input.empty {
   object-fit: contain;
 }
 
-.storytext {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 12px;
-  color: black;
+.user-photo {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
 }
 
+.postuserfont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #262626bb;
+}
+
+/* right panel */
+
 .rightpanel {
-    border: none;
-    background-color: #fff;
+  border: none;
+  background-color: #fff;
+}
+
+#sticky-sidebar {
+  position: sticky;
+  top: 54px;
+}
+
+.profile-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(238, 39, 82);
+  margin-left: -15px;
+}
+
+.suggested-user-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+::placeholder {
+  text-align: center;
+  font-size: 14px;
+  background: url("assets/search-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 6%;
+  background-position: 37%;
+}
+
+.follow-btn {
+  font-size: 13px;
+  color: #0095f6;
+  margin-top: 5px;
+}
+
+.right-panel-footer {
+  color: lightgray;
+  font-size: 11px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .rightpanellinks {
@@ -90,9 +118,4 @@ input.empty {
 .rightpanellinks:hover {
   text-decoration: none;
   color: lightgrey;
-}
-
-#sticky-sidebar{
-position: sticky;
-    top: 54px;
 }
