@@ -1,56 +1,44 @@
-let nodeList = document.getElementsByTagName("LI");
+const nodeList = document.querySelectorAll("li");
+let ulDOM = document.querySelector("#itemList");
+const closeButtonSpan = `<span class="close-button">${"\u00D7"}</span>`;
 
-for (let index = 0; index < nodeList.length; index++) {
-  let span = document.createElement("SPAN");
-  let txt = document.createTextNode("\u00D7");
-  span.className = "close-button";
-  span.appendChild(txt);
-  nodeList[index].appendChild(span);
-}
+nodeList.forEach((item) => (item.innerHTML += closeButtonSpan));
 
-let close = document.getElementsByClassName("close-button");
+const closeItem = () => {
+  const closeButtons = document.querySelectorAll(".close-button");
 
-for (let index = 0; index < close.length; index++) {
-  close[index].onclick = function () {
-    let div = this.parentElement;
-    div.style.display = "none";
-  };
-}
+  closeButtons.forEach((item) =>
+    item.addEventListener("click", () => {
+      console.log(item);
+      let div = item.parentElement;
+      div.style.display = "none";
+    })
+  );
+};
 
-let list = document.querySelector("ul");
-list.addEventListener(
+let itemslist = document.querySelector("ul");
+itemslist.addEventListener(
   "click",
-  (ev) => {
-    if (ev.target.tagName === "LI") {
-      ev.target.classList.toggle("checked");
+  (e) => {
+    if (e.target.tagName === "LI") {
+      e.target.classList.toggle("checked");
     }
   },
   false
 );
 
-let ulDOM = document.querySelector("#itemList");
-
 const addListItem = () => {
   let input = document.querySelector("#inputText").value;
-  let inputText = document.createTextNode(input);
-  let liDOM = document.createElement("li");
-  liDOM.appendChild(inputText);
 
   if (input !== "") {
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close-button";
-    span.appendChild(txt);
-    liDOM.appendChild(span);
-    ulDOM.appendChild(liDOM);
-
-    for (i = 0; i < close.length; i++) {
-      close[i].onclick = function () {
-        var div = this.parentElement;
-        div.style.display = "none";
-      };
-    }
+    const liDo = `<li>${input} ${closeButtonSpan}</li>`;
+    ulDOM.innerHTML += liDo;
+    closeItem();
   } else {
-    console.log("empty input");
+    $(document).ready(function () {
+      $(".toast").toast("show");
+    });
   }
 };
+
+closeItem();
