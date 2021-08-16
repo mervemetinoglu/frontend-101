@@ -1,3 +1,3 @@
 ## To Do List
 
-![To Do List](assets/to-do.gif)
+![To Do List](to-do.gif)
