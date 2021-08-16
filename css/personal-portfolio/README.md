@@ -1,3 +1,3 @@
 ## Personal Portfolio Clone
 
-![Personal Portfolio](images/portfolio.gif)
+![Personal Portfolio](portfolio.gif)
