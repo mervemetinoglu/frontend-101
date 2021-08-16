@@ -27,4 +27,5 @@ There are several beginner projects for front-end development in this repo.
 **ReactJS Projects**
 
 - Contact List App
+- To Do List
 - Random Quote Machine
