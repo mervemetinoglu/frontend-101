@@ -1,3 +1,3 @@
 ## Glassmorphism Card
 
-![Glassmorphism Card](card.png)
+![Glassmorphism Card](assets/card.png)
