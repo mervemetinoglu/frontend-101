@@ -15,7 +15,7 @@ body {
   background: linear-gradient(
     #3a798f,
     #3a798f 45%,
-    #fff 45%,
+    rgb(233, 233, 233) 45%,
     rgb(233, 233, 233) 100%
   );
 }
